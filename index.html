@@ -3,17 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>D3</title>
-
+    <title>Visualização de dados</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
-<style>
 
-</style>
 
 <body>
     <div class="container">
@@ -23,13 +18,12 @@
         </div>
         <header>
             <h1>Visualização de Dados - Lab2 Parte2</h1>
-            <h3> A visualização foi baseada nos dados fornecidos para atividade. Foram utilizados o horário de submissão dos usuarios
-            e a resposta dos usuários para a primeira pergunta do formulário.</h3>
+            <h3> A visualização foi baseada em dados que tentam identificar a aleatoriedade das pessoas. Os dados podem ser consultados <a href="https://drive.google.com/file/d/0B2rlaHwjOlZAcldJTVhJSjVpVnM/view" target="_blank"><ins><i>nesse link</i></ins></a>. Na visualização foram utilizados como base o horário de submissão das respostas e a resposta para a primeira pergunta da pesquisa.
         </header>
 
-        <div>
+        <div class="pergunta">
 
-            <h3> Pergunta: Conforme o  horário de resposta, em média, qual foi o valor escolhido para a primeira pergunta? </h3>
+            <h3> <strong>Conforme o  horário de resposta, em média, qual foi o valor escolhido para a primeira pergunta?</strong></h3>
             <br></br>
         </div>
         <svg width="960" height="620"></svg>
@@ -37,7 +31,7 @@
         <script>
             var svg = d3.select("svg"),
                 margin = {
-                    top: 50,
+                    top: 5,
                     right: 20,
                     bottom: 20,
                     left: 150
